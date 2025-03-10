@@ -1,0 +1,45 @@
+/* 
+.container {
+    display: flex;
+    width: 600px;
+    border: 2px solid black;
+}
+.item {
+    background-color: lightblue;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid blue;
+}
+.item1{
+     flex-basis: auto; 
+}
+.item2 {
+     flex-basis: 200px; 
+    }
+.item3 { 
+    flex-basis: 50%; 
+} */
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cssdummy.css">
+</head>
+<body>
+    <h1>Flexbox playground</h1>
+    <div id="container">
+     <div style="background-color: violet;">violet</div>
+     <div style="background-color: indigo;">indigo</div>
+     <div id="blue" style="background-color: blue; height:75px">blue</div>
+     <div style="background-color: green;">green</div>
+     <div style="background-color: yellow;">yellow</div>
+     <div style="background-color: orange;">orange</div>
+     <div id="org" style="background-color: red; height: 100px font-size30px";>red</div>
+    </div>
+</body>
+</html> -->
+

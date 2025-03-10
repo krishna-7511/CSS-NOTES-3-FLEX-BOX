@@ -1,0 +1,24 @@
+/* flex-basis:it sets the initial main size of a flex item.
+
+flex-basis:100px; */
+
+.container {
+    display: flex;
+    width: 600px;
+    border: 2px solid black;
+}
+.item {
+    background-color: lightblue;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid blue;
+}
+.item1{
+     flex-basis: auto; 
+}
+.item2 {
+     flex-basis: 200px; 
+    }
+.item3 { 
+    flex-basis: 50%; 
+}
