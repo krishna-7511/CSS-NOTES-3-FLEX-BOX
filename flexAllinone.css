@@ -68,11 +68,6 @@
 </html>
  -->
 
- /*
-     nowrap (default) → All flex items stay in a single line, even if they overflow. 
-     wrap → Flex items wrap onto the next line if they don’t fit. 
-     wrap-reverse → Like wrap, but items wrap in the reverse direction. 
-  */
 
  <!-- <!DOCTYPE html>    flex-direction: Defines the direction of flex items.
  <html lang="en">
@@ -139,6 +134,11 @@
  </body>
  </html> -->
 
+ /*
+     nowrap (default) → All flex items stay in a single line, even if they overflow. 
+     wrap → Flex items wrap onto the next line if they don’t fit. 
+     wrap-reverse → Like wrap, but items wrap in the reverse direction. 
+  */
 
  <!-- <!DOCTYPE html>  flex-wrap: Allows items to wrap into multiple lines.
  <html lang="en">
