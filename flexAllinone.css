@@ -1,0 +1,658 @@
+<!-- display: flex;        Block-level flex container  -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .block-flex {
+          display: flex;
+          background-color: lightgray;
+          padding: 10px;
+        }
+        .item {
+          background-color: coral;
+          margin: 5px;
+          padding: 10px;
+          color: white;
+        }
+      </style>
+      
+      <div class="block-flex">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+      </div>
+      
+</body>
+</html> -->
+
+
+<!--   display: inline-flex;/* Inline-level flex container */
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .inline-flex {
+          display: inline-flex;
+          background-color: lightblue;
+          padding: 10px;
+        }
+        .item {
+          background-color: darkblue;
+          margin: 5px;
+          padding: 10px;
+          color: white;
+        }
+      </style>
+      
+      <p>
+        This is a paragraph with an 
+        <span class="inline-flex">
+          <span class="item">Item 1</span>
+          <span class="item">Item 2</span>
+        </span>
+        inline flex container.
+      </p>
+      
+</body>
+</html>
+ -->
+
+
+ <!-- <!DOCTYPE html>    flex-direction: Defines the direction of flex items.
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+    <style>
+        .container {
+    display: flex;
+    margin: 10px;
+    border: 1px solid #000;
+}
+
+.item {
+    padding: 10px;
+    margin: 5px;
+    background-color: lightblue;
+}
+
+.row {
+    flex-direction: row;
+}
+
+.row-reverse {
+    flex-direction: row-reverse;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.column-reverse {
+    flex-direction: column-reverse;
+}
+
+    </style>
+ <body>
+    <div class="container row">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+    
+    <div class="container row-reverse">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+    
+    <div class="container column">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+    
+    <div class="container column-reverse">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+    
+ </body>
+ </html> -->
+
+
+ <!-- <!DOCTYPE html>  flex-wrap: Allows items to wrap into multiple lines.
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+     <style>
+        .container {
+  display: flex;
+  gap: 10px;
+  margin: 10px;
+  width: 200px;
+  border: 1px solid #000;
+}
+
+.nowrap {
+  flex-wrap: nowrap;
+  background-color: lightcoral;
+}
+
+.wrap {
+  flex-wrap: wrap;
+  background-color: lightblue;
+}
+
+.wrap-reverse {
+  flex-wrap: wrap-reverse;
+  background-color: lightgreen;
+}
+
+.container div {
+  padding: 10px;
+  background-color: white;
+  border: 1px solid #000;
+}
+
+     </style>
+ <body>
+    <div class="container nowrap">
+        <div>Item 1</div>
+        <div>Item 2</div>
+        <div>Item 3</div>
+        <div>Item 4</div>
+      </div>
+      
+      <div class="container wrap">
+        <div>Item 1</div>
+        <div>Item 2</div>
+        <div>Item 3</div>
+        <div>Item 4</div>
+      </div>
+      
+      <div class="container wrap-reverse">
+        <div>Item 1</div>
+        <div>Item 2</div>
+        <div>Item 3</div>
+        <div>Item 4</div>
+      </div>
+      
+ </body>
+ </html> -->
+
+
+<!-- <!DOCTYPE html>   justify-content: Aligns items along the main axis.
+<html>
+<head>
+  <title>Flexbox Justify Content Examples</title>
+  <style>
+    .flex-container {
+      display: flex;
+      width: 80%;
+      height: 100px;
+      margin: 20px auto;
+      background-color: #f0f0f0;
+      border: 1px solid #ddd;
+    }
+
+    .item {
+      background-color: #4CAF50;
+      padding: 10px;
+      color: #fff;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+
+<h2>Flex Start (Default)</h2>
+<div class="flex-container" style="justify-content: flex-start;">
+  <div class="item">Item 1</div>
+  <div class="item">Item 2</div>
+  <div class="item">Item 3</div>
+</div>
+
+<h2>Flex End</h2>
+<div class="flex-container" style="justify-content: flex-end;">
+  <div class="item">Item 1</div>
+  <div class="item">Item 2</div>
+  <div class="item">Item 3</div>
+</div>
+
+<h2>Center</h2>
+<div class="flex-container" style="justify-content: center;">
+  <div class="item">Item 1</div>
+  <div class="item">Item 2</div>
+  <div class="item">Item 3</div>
+</div>
+
+<h2>Space Between</h2>
+<div class="flex-container" style="justify-content: space-between;">
+  <div class="item">Item 1</div>
+  <div class="item">Item 2</div>
+  <div class="item">Item 3</div>
+</div>
+
+<h2>Space Around</h2>
+<div class="flex-container" style="justify-content: space-around;">
+  <div class="item">Item 1</div>
+  <div class="item">Item 2</div>
+  <div class="item">Item 3</div>
+</div>
+
+<h2>Space Evenly</h2>
+<div class="flex-container" style="justify-content: space-evenly;">
+  <div class="item">Item 1</div>
+  <div class="item">Item 2</div>
+  <div class="item">Item 3</div>
+</div>
+
+</body>
+</html> -->
+
+<!--          align-items: Aligns items along the cross axis.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Align Items Example</title>
+        <style>
+            .container {
+                display: flex;
+                height: 200px;
+                border: 2px solid #333;
+                margin: 20px;
+            }
+    
+            .box {
+                background-color: lightcoral;
+                width: 50px;
+                margin: 5px;
+                padding: 10px;
+                color: white;
+                text-align: center;
+            }
+    
+            /* Try changing the align-items value */
+            .stretch {
+                align-items: stretch;
+            }
+    
+            .start {
+                align-items: flex-start;
+            }
+    
+            .end {
+                align-items: flex-end;
+            }
+    
+            .center {
+                align-items: center;
+            }
+    
+            .baseline {
+                align-items: baseline;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>Stretch (default)</h3>
+        <div class="container stretch">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+        </div>
+    
+        <h3>Flex Start</h3>
+        <div class="container start">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+        </div>
+    
+        <h3>Flex End</h3>
+        <div class="container end">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+        </div>
+    
+        <h3>Center</h3>
+        <div class="container center">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+        </div>
+    
+        <h3>Baseline</h3>
+        <div class="container baseline">
+            <div class="box" style="font-size: 12px;">A</div>
+            <div class="box" style="font-size: 24px;">B</div>
+            <div class="box" style="font-size: 16px;">C</div>
+        </div>
+    </body>
+    </html>
+    
+</body>
+</html> -->
+
+
+<!-- <!DOCTYPE html>    align-content: Aligns multi-line flex items.
+<html>
+<head>
+  <title>CSS Flexbox align-content Demo</title>
+  <style>
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      height: 300px;
+      width: 400px;
+      border: 2px solid #333;
+    }
+
+    .box {
+      width: 80px;
+      height: 50px;
+      margin: 5px;
+      background-color: #4CAF50;
+      color: #fff;
+      text-align: center;
+      line-height: 50px;
+    }
+  </style>
+</head>
+<body>
+
+<h2>CSS Flexbox align-content Demonstration</h2>
+<h3>align-content: stretch (Default)</h3>
+<div class="container" style="align-content: stretch;">
+  <div class="box">1</div>
+  <div class="box">2</div>
+  <div class="box">3</div>
+  <div class="box">4</div>
+  <div class="box">5</div>
+  <div class="box">6</div>
+</div>
+
+<h3>align-content: flex-start</h3>
+<div class="container" style="align-content: flex-start;">
+  <div class="box">1</div>
+  <div class="box">2</div>
+  <div class="box">3</div>
+  <div class="box">4</div>
+  <div class="box">5</div>
+  <div class="box">6</div>
+</div>
+
+<h3>align-content: flex-end</h3>
+<div class="container" style="align-content: flex-end;">
+  <div class="box">1</div>
+  <div class="box">2</div>
+  <div class="box">3</div>
+  <div class="box">4</div>
+  <div class="box">5</div>
+  <div class="box">6</div>
+</div>
+
+<h3>align-content: center</h3>
+<div class="container" style="align-content: center;">
+  <div class="box">1</div>
+  <div class="box">2</div>
+  <div class="box">3</div>
+  <div class="box">4</div>
+  <div class="box">5</div>
+  <div class="box">6</div>
+</div>
+
+<h3>align-content: space-between</h3>
+<div class="container" style="align-content: space-between;">
+  <div class="box">1</div>
+  <div class="box">2</div>
+  <div class="box">3</div>
+  <div class="box">4</div>
+  <div class="box">5</div>
+  <div class="box">6</div>
+</div>
+
+<h3>align-content: space-around</h3>
+<div class="container" style="align-content: space-around;">
+  <div class="box">1</div>
+  <div class="box">2</div>
+  <div class="box">3</div>
+  <div class="box">4</div>
+  <div class="box">5</div>
+  <div class="box">6</div>
+</div>
+
+</body>
+</html>
+ -->
+
+
+ <!-- <!DOCTYPE html>   Properties of Flex Items  grow
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Grow Example</title>
+    <style>
+        .container {
+            display: flex;
+            width: 100%;
+            height: 100px;
+            background-color: #f0f0f0;
+        }
+        .item {
+            height: 100%;
+            background-color: #4CAF50;
+            margin: 10px;
+        }
+        .grow {
+            flex-grow: 2;
+        }
+        .no-grow {
+            flex-grow: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item grow">Item 1 (Grow)</div>
+        <div class="item no-grow">Item 2 (No Grow)</div>
+    </div>
+</body>
+</html> -->
+
+
+<!-- <!DOCTYPE html>      Properties of Flex Items  shrink
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Shrink Example</title>
+    <style>
+        .container {
+            display: flex;
+            width: 100%;
+            height: 100px;
+            background-color: #f0f0f0;
+        }
+        .item {
+            height: 100%;
+            background-color: #4CAF50;
+            margin: 10px;
+        }
+        .shrink {
+            flex-shrink: 2;
+        }
+        .no-shrink {
+            flex-shrink: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item shrink">Item 1 (Shrink)</div>
+        <div class="item no-shrink">Item 2 (No Shrink)</div>
+    </div>
+</body>
+</html> -->
+
+ 
+<!-- <!DOCTYPE html>     Properties of Flex Items  basis
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Basis Example</title>
+    <style>
+        .container {
+            display: flex;
+            width: 100%;
+            height: 100px;
+            background-color: #f0f0f0;
+        }
+        .item {
+            height: 100%;
+            background-color: #4CAF50;
+            margin: 10px;
+        }
+        .basis {
+            flex-basis: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item basis">Item 1 (Flex Basis)</div>
+        <div class="item">Item 2</div>
+    </div>
+</body>
+</html> -->
+
+<!-- 
+<!DOCTYPE html>       Properties of Flex Items  shorthand
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Shorthand Example</title>
+    <style>
+        .container {
+            display: flex;
+            width: 100%;
+            height: 100px;
+            background-color: #f0f0f0;
+        }
+        .item {
+            height: 100%;
+            background-color: #4CAF50;
+            margin: 10px;
+        }
+        .shorthand {
+            flex: 1; /* Shorthand for flex-grow: 1, flex-shrink: 1, flex-basis: 0% */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item shorthand">Item 1 (Flex Shorthand)</div>
+        <div class="item">Item 2</div>
+    </div>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>       align-self: Overrides the align-items property for a specific item.
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Align Self Examples</title>
+  <style>
+    .container {
+      display: flex;
+      height: 200px;
+      border: 2px solid black;
+      justify-content: space-between; /* Distribute items horizontally */
+      background-color: lightgray;
+    }
+    .item {
+      width: 30%;
+      height: 50px;
+      background-color: skyblue;
+      text-align: center;
+      line-height: 50px;
+    }
+    /* Specific styles for each alignment */
+    .align-auto {
+      align-self: auto;
+    }
+    .align-flex-start {
+      align-self: flex-start;
+    }
+    .align-flex-end {
+      align-self: flex-end;
+    }
+    .align-center {
+      align-self: center;
+    }
+    .align-baseline {
+      align-self: baseline;
+    }
+    .align-stretch {
+      align-self: stretch;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="item align-auto">Auto</div>
+    <div class="item align-flex-start">Flex Start</div>
+    <div class="item align-flex-end">Flex End</div>
+    <div class="item align-center">Center</div>
+    <div class="item align-baseline">Baseline</div>
+    <div class="item align-stretch">Stretch</div>
+  </div>
+
+</body>
+</html>   
+
+<!-- once look at each concept in flex especially last one flex-items  -->
+
+
+
+
+
+
+
+
+
+
