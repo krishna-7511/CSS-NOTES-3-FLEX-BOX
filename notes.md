@@ -19,12 +19,15 @@ justify-content: space-between;   /* Space between items */
 justify-content: space-around;    /* Space around items */
 justify-content: space-evenly;    /* Even space between items */
 
+justify-content tells how the browser distributes space between and around content items along the main axis
 
 align-items: stretch;             /* Default - stretch to fill the container */
 align-items: flex-start;          /* Align to start */
 align-items: flex-end;            /* Align to end */
 align-items: center;              /* Align to center */
 align-items: baseline;            /* Align by text baseline */
+
+align-items distributes our items along the cross axis
 
 
 align-content: stretch;           /* Default - stretches items */
@@ -34,13 +37,15 @@ align-content: center;
 align-content: space-between;
 align-content: space-around;
 
+align-content it sets the distribution of space between and arond content items along a flexbox's cross-axis
+
 
 
 Properties of Flex Items:
 
-flex-grow: 1;                     /* Item can grow to fill space */
-flex-shrink: 1;                   /* Item can shrink if needed */
-flex-basis: 200px;                /* Sets initial width/height of the item */
+flex-grow: 1;                     /* Item can shrink if needed  along the flexitem */
+flex-shrink: 1;                   /* Item can shrink if needed  along the flexitem */
+flex-basis: 200px;                /* it sets the initial main size of a flex item */ 
 flex: 1 1 200px;                  /* flex-grow: 1, flex-shrink: 1, flex-basis: 200px */
 align-self: auto;                /* Default - follows align-items */
 align-self: flex-start;
@@ -48,5 +53,9 @@ align-self: flex-end;
 align-self: center;
 align-self: baseline;
 align-self: stretch;
+
+align-self an item along the cross axis
+
+it is high priority alignself > align item
 
 
